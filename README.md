@@ -268,13 +268,11 @@ Distributed under the **Apache 2.0 License**. See [`LICENSE`](LICENSE) for more 
 
 ---
 
-## 👨‍💻 Author & Acknowledgements
+## 👨‍💻 Team
 
-Created with ❤️ by **[Digvijay Rawat](https://github.com/Digvijay-x1)**
-
-- Follow on X: [@DIGVIJAY__RAWAT](https://x.com/DIGVIJAY__RAWAT)
-- GitHub: [Digvijay-x1](https://github.com/Digvijay-x1)
-
-<div align="center">
-  <sub>Built for creators, designers, and developers around the world.</sub>
-</div>
+IIB2024010 - Mayank Kumar Jha
+IIT2024252 - Murari Kandagatla
+IIT2024232 - Prince Raj
+IIB2024022 - Archee Jaiswal
+IIT2024241 - Vraj Chalodiya
+IIT2024271 - Baby Bhavya Harshita
