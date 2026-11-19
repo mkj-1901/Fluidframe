@@ -270,9 +270,9 @@ Distributed under the **Apache 2.0 License**. See [`LICENSE`](LICENSE) for more 
 
 ## 👨‍💻 Team
 
-IIB2024010 - Mayank Kumar Jha
-IIT2024252 - Murari Kandagatla
-IIT2024232 - Prince Raj
-IIB2024022 - Archee Jaiswal
-IIT2024241 - Vraj Chalodiya
-IIT2024271 - Baby Bhavya Harshita
+- IIB2024010 - Mayank Kumar Jha
+- IIT2024252 - Murari Kandagatla
+- IIT2024232 - Prince Raj
+- IIB2024022 - Archee Jaiswal
+- IIT2024241 - Vraj Chalodiya
+- IIT2024271 - Baby Bhavya Harshita
