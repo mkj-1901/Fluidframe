@@ -30,7 +30,7 @@
     "@neon/env": "^1.4.7",
     "@next/env": "16.0.10",
     "@phosphor-icons/react": "^2.1.10",
-    "@prisma/adapter-pg": "7.9.1",
+    "@prisma/adapter-pg": "7.10.1",
     "@prisma/client": "7.9.1",
     "@radix-ui/react-accordion": "^1.2.21",
     "@radix-ui/react-alert-dialog": "^1.1.15",
