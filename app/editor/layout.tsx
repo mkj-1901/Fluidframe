@@ -38,7 +38,6 @@ export const metadata: Metadata = {
     title: "Fluidframe Studio Editor - Visual Mockups & WebGL Shaders",
     description:
       "Design high-resolution mockups, interactive 3D device angles, fluid WebGL mesh gradient shaders, retro Bayer dither art, and export 60FPS MP4 videos.",
-    creator: "@DIGVIJAY__RAWAT",
     images: ["/editor.png"],
   },
 };

@@ -27,8 +27,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@DIGVIJAY__RAWAT",
-    creator: "@DIGVIJAY__RAWAT",
     title: "Terms and Conditions (TOC) | Fluidframe",
     description:
       "Review the Terms and Conditions for Fluidframe. Full commercial ownership of all exported designs, zero-knowledge browser execution, and open creative freedom.",

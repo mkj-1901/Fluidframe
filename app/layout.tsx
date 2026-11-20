@@ -102,7 +102,6 @@ export const metadata: Metadata = {
     "developer portfolio mockup",
   ],
   authors: [
-    { name: "Digvijay Rawat" },
     { name: "Fluidframe", url: "https://fluidframe.vercel.app" },
   ],
   creator: "Fluidframe",
@@ -129,8 +128,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@DIGVIJAY__RAWAT",
-    creator: "@DIGVIJAY__RAWAT",
     title: "Fluidframe - 3D Screenshot Mockups & WebGL Studio for Developers",
     description:
       "The premier visual studio for developers and creators. Create 3D isometric screenshot mockups, real-time WebGL fluid mesh gradients, and retro Bayer dither art.",
@@ -157,8 +154,6 @@ export const metadata: Metadata = {
   },
   other: {
     "twitter:card": "summary_large_image",
-    "twitter:site": "@DIGVIJAY__RAWAT",
-    "twitter:creator": "@DIGVIJAY__RAWAT",
     "twitter:url": "https://fluidframe.vercel.app/",
     "twitter:image": "https://fluidframe.vercel.app/landing.png",
     "twitter:image:alt":
@@ -205,8 +200,7 @@ const jsonLd = {
       url: "https://fluidframe.vercel.app",
       logo: "https://fluidframe.vercel.app/landing.png",
       sameAs: [
-        "https://x.com/DIGVIJAY__RAWAT",
-        "https://github.com/Digvijay-x1/fluidframe",
+        "https://github.com/mkj-1901/Fluidframe",
       ],
     },
   ],

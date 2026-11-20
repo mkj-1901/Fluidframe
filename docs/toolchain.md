@@ -1,6 +1,6 @@
 # Reproducible installation and build
 
-This guide implements [issue #3](https://github.com/Digvijay-x1/Fluidframe/issues/3). Use Node 24.18.0 and npm 11.16.0 locally and in Actions. Vercel manages the Node 24.x patch version; `engines.node` prevents a different major. Update `.nvmrc`, `.node-version`, `package.json`, `vercel.json`, and the setup action together when upgrading the toolchain.
+This guide implements [issue #3](https://github.com/mkj-1901/Fluidframe/issues/3). Use Node 24.18.0 and npm 11.16.0 locally and in Actions. Vercel manages the Node 24.x patch version; `engines.node` prevents a different major. Update `.nvmrc`, `.node-version`, `package.json`, `vercel.json`, and the setup action together when upgrading the toolchain.
 
 ## Clean checkout
 

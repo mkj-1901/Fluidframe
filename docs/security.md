@@ -1,6 +1,6 @@
 # Workflow and dependency security
 
-These source controls implement the automation for [issue #6](https://github.com/Digvijay-x1/Fluidframe/issues/6).
+These source controls implement the automation for [issue #6](https://github.com/mkj-1901/Fluidframe/issues/6).
 Repository activation and verification evidence are recorded below. A successful CodeQL job means analysis completed; findings are enforced by
 the code scanning ruleset, not by the analysis job exit status.
 
@@ -34,7 +34,7 @@ External Actions are pinned to full commit SHAs. Dependabot proposes updates to
 these pins, including the setup composite action. Review the upstream release,
 commit, permissions, and executed code before approval. Go tools are installed
 at explicit versions and verified through Go's module checksum database; their
-version updates are manual, owned by @Digvijay-x1. Do not disable module checksum
+version updates are manual, owned by @mkj-1901. Do not disable module checksum
 verification. Go download caches are disabled in security validation.
 
 ## Trust boundaries
@@ -80,8 +80,8 @@ tokens, disabled PR approval by Actions, and `first_time_contributors` fork
 approval. The existing main ruleset still requires CI required.
 
 Both CodeQL categories completed with zero findings in the
-[initial hosted scan](https://github.com/Digvijay-x1/Fluidframe/actions/runs/36839447303).
-The active [CodeQL ruleset](https://github.com/Digvijay-x1/Fluidframe/rules/24298193)
+[initial hosted scan](https://github.com/mkj-1901/Fluidframe/actions/runs/36839447303).
+The active [CodeQL ruleset](https://github.com/mkj-1901/Fluidframe/rules/24298193)
 requires CodeQL with `high_or_higher` security and `errors` alert thresholds on
 main. Its administrator bypass is limited to pull requests, matching the existing
 CI ruleset. Default CodeQL setup remains unconfigured because the committed
@@ -97,7 +97,7 @@ remain in #7; no privileged release workflow currently exists.
 
 An exception requires a reviewed PR naming the advisory/finding ID, affected
 paths and environments, exploitability analysis, compensating controls, owner,
-tracking issue, and expiry date (at most 30 days). @Digvijay-x1 owns triage and
+tracking issue, and expiry date (at most 30 days). @mkj-1901 owns triage and
 expiry review. Never globally lower thresholds, enable warn-only, blanket-ignore
 files, or force dependency upgrades. Prefer a compatible patched version and
 verify the affected behavior. Expired exceptions block release. CodeQL alert
@@ -133,7 +133,7 @@ local directory and scan it with `gitleaks dir --redact=100`; do not commit real
 credentials or publish scanner reports. Restore the probe changes before opening
 the implementation for merge. Confirm fork runs receive no production credentials.
 
-The [hosted failure probe](https://github.com/Digvijay-x1/Fluidframe/actions/runs/36839790443)
+The [hosted failure probe](https://github.com/mkj-1901/Fluidframe/actions/runs/36839790443)
 introduced `lodash@4.17.20` and direct PR-title interpolation into shell. Dependency
 review rejected the high-severity advisories GHSA-35jh-r3h4-6jhm and
 GHSA-r5fr-rjxr-66jc; actionlint rejected the untrusted expression; **CI required**

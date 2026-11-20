@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, useScroll, useMotionValueEvent } from "motion/react";
-import { ListIcon, GithubLogoIcon } from "@phosphor-icons/react";
+import { ListIcon } from "@phosphor-icons/react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -99,7 +99,7 @@ export const Navbar = () => {
             </div>
 
             <a
-              href="https://github.com/Digvijay-x1"
+              href="https://github.com/mkj-1901/Fluidframe"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex"
@@ -109,8 +109,7 @@ export const Navbar = () => {
                 variant="outline"
                 className="relative overflow-hidden group gap-1.5 rounded-lg px-3 h-8 text-xs font-semibold font-manrope border-border/80 hover:border-foreground/30 dark:hover:border-white/30 hover:bg-muted text-foreground shadow-xs hover:scale-[1.02] active:scale-[0.98] transition-all duration-150 cursor-pointer"
               >
-                <GithubLogoIcon className="size-3.5 shrink-0 text-foreground relative z-10" />
-                <span className="relative z-10">GitHub</span>
+                <span className="relative z-10">Repository</span>
                 <div
                   className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]"
                   aria-hidden="true"
@@ -180,7 +179,7 @@ export const Navbar = () => {
                       </Button>
                     </Link>
                     <a
-                      href="https://github.com/Digvijay-x1/fluidframe"
+                      href="https://github.com/mkj-1901/Fluidframe"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}
@@ -190,8 +189,7 @@ export const Navbar = () => {
                         variant="outline"
                         className="relative overflow-hidden group w-full rounded-lg h-10 text-xs font-semibold font-manrope border-border hover:border-foreground/30 dark:hover:border-white/30 gap-1.5 hover:bg-muted cursor-pointer"
                       >
-                        <GithubLogoIcon className="size-3.5 shrink-0 text-foreground relative z-10" />
-                        <span className="relative z-10">GitHub</span>
+                        <span className="relative z-10">Repository</span>
                         <div
                           className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]"
                           aria-hidden="true"

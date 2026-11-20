@@ -1,25 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import React from "react";
+import { motion } from "motion/react";
 import {
-  QrCodeIcon,
-  CopyIcon,
   SparkleIcon,
   StarIcon,
   ShieldCheckIcon,
   PersonIcon,
-  CheckIcon,
   ArrowRightIcon,
   GitPullRequestIcon,
   BugIcon,
   CurrencyDollarIcon,
-  GithubLogoIcon,
   type Icon,
 } from "@phosphor-icons/react";
-import TechStackIcon from "tech-stack-icons";
-import Image from "next/image";
-import { toast } from "sonner";
 
 interface ContributionChannel {
   id: string;
@@ -44,20 +37,6 @@ interface TelemetryCapability {
 }
 
 export const Support: React.FC = () => {
-  const [showQR, setShowQR] = useState(false);
-  const [copied, setCopied] = useState(false);
-
-  const upiId = "hackerearthx1-1@oksbi";
-
-  const handleCopyUPI = () => {
-    navigator.clipboard.writeText(upiId);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2500);
-    toast.success("UPI ID copied to clipboard!", {
-      description: upiId,
-    });
-  };
-
   const contributionChannels: ContributionChannel[] = [
     {
       id: "star",
@@ -66,7 +45,7 @@ export const Support: React.FC = () => {
       desc: "Help more creators discover Fluidframe",
       icon: StarIcon,
       iconColor: "text-orange-400",
-      href: "https://github.com/Digvijay-x1/fluidframe",
+      href: "https://github.com/mkj-1901/Fluidframe",
       borderClass: "hover:border-orange-400/50",
       bgHover: "hover:bg-orange-400/5",
     },
@@ -77,7 +56,7 @@ export const Support: React.FC = () => {
       desc: "Contribute via new features and tools",
       icon: GitPullRequestIcon,
       iconColor: "text-purple-600",
-      href: "https://github.com/Digvijay-x1/fluidframe/pulls",
+      href: "https://github.com/mkj-1901/Fluidframe/pulls",
       borderClass: "hover:border-purple-500/50",
       bgHover: "hover:bg-purple-500/5",
     },
@@ -88,7 +67,7 @@ export const Support: React.FC = () => {
       desc: "Report bugs or suggest solutions",
       icon: BugIcon,
       iconColor: "text-red-500",
-      href: "https://github.com/Digvijay-x1/fluidframe/issues",
+      href: "https://github.com/mkj-1901/Fluidframe/issues",
       borderClass: "hover:border-red-500/50",
       bgHover: "hover:bg-red-500/5",
     },
@@ -224,109 +203,32 @@ export const Support: React.FC = () => {
                 <div className="absolute inset-3 rounded-full border border-border/60 dark:border-neutral-800 pointer-events-none" />
 
                 <div className="relative z-10 flex flex-col items-center text-center w-full">
-                  <AnimatePresence mode="wait">
-                    {showQR ? (
-                      <motion.div
-                        key="qr-hologram"
-                        initial={{ opacity: 0, scale: 0.9, rotateY: 90 }}
-                        animate={{ opacity: 1, scale: 1, rotateY: 0 }}
-                        exit={{ opacity: 0, scale: 0.9, rotateY: -90 }}
-                        transition={{ duration: 0.35 }}
-                        className="flex flex-col items-center"
-                      >
-                        <div className="relative p-2.5 bg-white rounded-2xl shadow-2xl border-2 border-primary/50 mb-2.5 group">
-                          <div className="absolute -top-1 -left-1 size-3 border-t-2 border-l-2 border-primary" />
-                          <div className="absolute -top-1 -right-1 size-3 border-t-2 border-r-2 border-primary" />
-                          <div className="absolute -bottom-1 -left-1 size-3 border-b-2 border-l-2 border-primary" />
-                          <div className="absolute -bottom-1 -right-1 size-3 border-b-2 border-r-2 border-primary" />
-
-                          <Image
-                            src="/qr.png"
-                            alt="Fluidframe Creator UPI QR Code"
-                            width={125}
-                            height={125}
-                            className="rounded-lg object-contain"
-                          />
-                        </div>
-
-                        <span className="text-[11px] font-inter text-muted-foreground mb-1.5">
-                          GPay · PhonePe · Paytm · UPI
+                  <div className="relative mb-3 group">
+                    <div className="size-20 rounded-2xl bg-linear-to-tr from-primary via-purple-500 to-amber-400 p-0.5 shadow-lg flex items-center justify-center">
+                      <div className="size-full bg-background rounded-[14px] flex items-center justify-center">
+                        <span className="font-bold text-2xl tracking-tight uppercase text-foreground">
+                          Fluid<span className="text-primary font-extrabold">frame</span>
                         </span>
+                      </div>
+                    </div>
+                  </div>
 
-                        <button
-                          type="button"
-                          onClick={() => setShowQR(false)}
-                          className="text-xs font-semibold text-primary hover:underline cursor-pointer flex items-center gap-1"
-                        >
-                          <span>Back to Direct Copy</span>
-                        </button>
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="upi-core"
-                        initial={{ opacity: 0, scale: 0.9, rotateY: -90 }}
-                        animate={{ opacity: 1, scale: 1, rotateY: 0 }}
-                        exit={{ opacity: 0, scale: 0.9, rotateY: 90 }}
-                        transition={{ duration: 0.35 }}
-                        className="flex flex-col items-center w-full"
-                      >
-                        <div className="relative mb-2.5 group">
-                          <div className="size-20 rounded-2xl bg-linear-to-tr from-primary via-purple-500 to-amber-400 p-0.5 shadow-lg">
-                            <div className="size-full bg-background rounded-[14px] overflow-hidden relative">
-                              <Image
-                                src="/author.jpeg"
-                                alt="Digvijay Rawat"
-                                fill
-                                className="object-cover"
-                              />
-                            </div>
-                          </div>
-                        </div>
+                  <h4 className="text-base font-bold text-foreground">
+                    Fluidframe
+                  </h4>
+                  <p className="text-[11px] text-muted-foreground mb-4">
+                    Open Source Visual Studio
+                  </p>
 
-                        <h4 className="text-sm font-bold text-foreground">
-                          Digvijay Rawat
-                        </h4>
-                        <p className="text-[11px] text-muted-foreground mb-2.5">
-                          Indie Developer & Creator
-                        </p>
-
-                        <motion.button
-                          whileHover={{ scale: 1.02 }}
-                          whileTap={{ scale: 0.98 }}
-                          onClick={() => handleCopyUPI()}
-                          className="w-full max-w-50 flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-background/80 dark:bg-neutral-900 border border-border/80 dark:border-neutral-800 hover:border-primary text-xs font-inter transition-all cursor-pointer shadow-xs group"
-                        >
-                          <span className="truncate text-foreground font-semibold">
-                            {upiId}
-                          </span>
-                          <div className="flex items-center gap-1 text-[11px] text-primary shrink-0">
-                            {copied ? (
-                              <>
-                                <CheckIcon className="size-3 text-emerald-500" />
-                                <span className="text-emerald-500 font-semibold">
-                                  Copied
-                                </span>
-                              </>
-                            ) : (
-                              <>
-                                <CopyIcon className="size-3" />
-                                <span className="font-semibold">Copy</span>
-                              </>
-                            )}
-                          </div>
-                        </motion.button>
-
-                        <button
-                          type="button"
-                          onClick={() => setShowQR(true)}
-                          className="mt-2.5 flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground hover:underline transition-colors cursor-pointer"
-                        >
-                          <QrCodeIcon className="size-3.5 text-primary" />
-                          <span>Show QR Code</span>
-                        </button>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  <a
+                    href="https://github.com/mkj-1901/Fluidframe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full max-w-50 flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-primary text-primary-foreground text-xs font-semibold hover:opacity-90 transition-all shadow-md group cursor-pointer"
+                  >
+                    <span>View Repository</span>
+                    <ArrowRightIcon className="size-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -382,26 +284,14 @@ export const Support: React.FC = () => {
                 })}
 
                 <a
-                  href="https://github.com/Digvijay-x1/fluidframe"
+                  href="https://github.com/mkj-1901/Fluidframe"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative overflow-hidden w-full flex items-center justify-between p-2.5 rounded-xl border border-border/70 dark:border-neutral-800 bg-muted/30 dark:bg-neutral-900/50 hover:bg-muted/70 hover:border-foreground/30 dark:hover:border-white/30 text-xs font-semibold text-foreground transition-all group shadow-xs"
                 >
                   <div className="flex items-center gap-3 relative z-10">
-                    <div className="size-8 rounded-xl bg-muted/30 dark:bg-neutral-800/90 border border-neutral-200 dark:border-neutral-900 flex items-center justify-center">
-                      <div className="transition-transform duration-200 ease-out group-hover:scale-[1.2] flex items-center justify-center">
-                        <GithubLogoIcon
-                          weight="regular"
-                          className="size-4 text-black dark:text-neutral-300 block group-hover:hidden"
-                        />
-                        <GithubLogoIcon
-                          weight="fill"
-                          className="size-4 text-black dark:text-neutral-300 hidden group-hover:block"
-                        />
-                      </div>
-                    </div>
                     <div className="flex flex-col">
-                      <span className="text-sm">Digvijay-x1/fluidframe</span>
+                      <span className="text-sm">mkj-1901/Fluidframe</span>
                       <span className="text-[11px] text-muted-foreground font-light">
                         Public repository{" "}
                       </span>

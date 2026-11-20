@@ -13,10 +13,10 @@ Design high-impact 3D device mockups, real-time WebGL fluid mesh gradients, retr
 [![WebGL](https://img.shields.io/badge/WebGL-GLSL_Shaders-990000?style=flat-square&logo=webgl)](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
 [![FFmpeg](https://img.shields.io/badge/FFmpeg-WASM_Client--Side-007808?style=flat-square&logo=ffmpeg)](https://ffmpegwasm.netlify.app/)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)](LICENSE)
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Digvijay-x1/Fluidframe?utm_source=oss&utm_medium=github&utm_campaign=Digvijay-x1%2FFluidframe&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/mkj-1901/Fluidframe?utm_source=oss&utm_medium=github&utm_campaign=mkj-1901%2FFluidframe&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-fluidframe.vercel.app-emerald?style=flat-square&logo=vercel)](https://fluidframe.vercel.app)
 
-[**Explore Live Demo (fluidframe.vercel.app)**](https://fluidframe.vercel.app) • [**Launch Editor**](https://fluidframe.vercel.app/editor) • [**Report Bug**](https://github.com/Digvijay-x1/fluidframe/issues)
+[**Explore Live Demo (fluidframe.vercel.app)**](https://fluidframe.vercel.app) • [**Launch Editor**](https://fluidframe.vercel.app/editor) • [**Report Bug**](https://github.com/mkj-1901/Fluidframe/issues)
 
 <br/>
 
@@ -179,7 +179,7 @@ Use **Node 24.18.0** and **npm 11.16.0**. npm is the canonical package manager; 
 ### 1. Clone and select the toolchain
 
 ```bash
-git clone https://github.com/Digvijay-x1/fluidframe.git
+git clone https://github.com/mkj-1901/Fluidframe.git
 cd fluidframe
 nvm install
 nvm use
@@ -252,7 +252,7 @@ npm start
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Digvijay-x1/fluidframe/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/mkj-1901/Fluidframe/issues).
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -268,12 +268,12 @@ Distributed under the **Apache 2.0 License**. See [`LICENSE`](LICENSE) for more 
 
 ---
 
-## 👨‍💻 Author & Acknowledgements
+## 📄 Acknowledgements & Community
 
-Created with ❤️ by **[Digvijay Rawat](https://github.com/Digvijay-x1)**
+Fluidframe is an open-source project maintained for creators worldwide.
 
-- Follow on X: [@DIGVIJAY__RAWAT](https://x.com/DIGVIJAY__RAWAT)
-- GitHub: [Digvijay-x1](https://github.com/Digvijay-x1)
+- Repository: [mkj-1901/Fluidframe](https://github.com/mkj-1901/Fluidframe)
+- Issues & Requests: [Report an Issue](https://github.com/mkj-1901/Fluidframe/issues)
 
 <div align="center">
   <sub>Built for creators, designers, and developers around the world.</sub>

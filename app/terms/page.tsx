@@ -16,7 +16,6 @@ import {
   CheckCircleIcon,
   WarningCircleIcon,
   GlobeIcon,
-  EnvelopeSimpleIcon,
   CodeIcon,
 } from "@phosphor-icons/react/dist/ssr";
 
@@ -46,8 +45,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@DIGVIJAY__RAWAT",
-    creator: "@DIGVIJAY__RAWAT",
     title: "Terms of Service & Conditions (TOC) | Fluidframe",
     description:
       "Review the Terms of Service & Conditions for Fluidframe. Apache 2.0 open-source license, full commercial ownership of all exported designs, and zero-knowledge browser execution.",
@@ -215,7 +212,7 @@ export default function TermsPage() {
               </nav>
               <div className="mt-6 pt-4 border-t border-border/50 space-y-2">
                 <a
-                  href="https://github.com/Digvijay-x1/fluidframe/blob/main/LICENSE"
+                  href="https://github.com/mkj-1901/Fluidframe/blob/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-primary font-medium hover:underline flex items-center gap-1 font-manrope"
@@ -351,7 +348,7 @@ export default function TermsPage() {
               <p className="text-xs">
                 To review the full license text, please inspect the{" "}
                 <a
-                  href="https://github.com/Digvijay-x1/fluidframe/blob/main/LICENSE"
+                  href="https://github.com/mkj-1901/Fluidframe/blob/main/LICENSE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-semibold"
@@ -432,8 +429,7 @@ export default function TermsPage() {
               <p>
                 The Apache 2.0 License does not grant permission to use the
                 trade names, trademarks, service marks, or product names of
-                Fluidframe or its maintainers (
-                <strong className="text-foreground">Digvijay Rawat</strong>),
+                Fluidframe or its maintainers,
                 except as required for reasonable and customary use in
                 describing the origin of the Work.
               </p>
@@ -536,7 +532,7 @@ export default function TermsPage() {
               </p>
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <a
-                  href="https://github.com/Digvijay-x1/fluidframe"
+                  href="https://github.com/mkj-1901/Fluidframe"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-border/80 bg-muted/40 hover:bg-muted text-xs font-semibold text-foreground transition-all"
@@ -546,18 +542,6 @@ export default function TermsPage() {
                     weight="duotone"
                   />
                   <span>GitHub Repository</span>
-                </a>
-                <a
-                  href="https://x.com/DIGVIJAY__RAWAT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-border/80 bg-muted/40 hover:bg-muted text-xs font-semibold text-foreground transition-all"
-                >
-                  <EnvelopeSimpleIcon
-                    className="size-3.5 text-emerald-500"
-                    weight="duotone"
-                  />
-                  <span>Contact the Developer</span>
                 </a>
               </div>
             </div>

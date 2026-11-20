@@ -10,7 +10,6 @@ import {
   ArrowClockwiseIcon,
   ArrowArcLeftIcon,
   TrashIcon,
-  XLogoIcon,
   SlidersIcon,
   XIcon,
   CircleNotchIcon,
@@ -848,13 +847,6 @@ export default function EditorPage() {
             Fluidframe Studio
           </span>
           <div className="flex items-center gap-1">
-            <Link
-              href="https://x.com/DIGVIJAY__RAWAT"
-              target="_blank"
-              className="text-muted-foreground hover:text-foreground transition-colors p-1"
-            >
-              <XLogoIcon className="size-4" />
-            </Link>
             <ThemeToggle />
           </div>
         </div>

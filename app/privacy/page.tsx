@@ -16,7 +16,6 @@ import {
   ArrowRightIcon,
   CheckCircleIcon,
   FileTextIcon,
-  EnvelopeSimpleIcon,
 } from "@phosphor-icons/react/dist/ssr";
 
 export const metadata: Metadata = {
@@ -45,8 +44,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@DIGVIJAY__RAWAT",
-    creator: "@DIGVIJAY__RAWAT",
     title: "Privacy Policy | Fluidframe",
     description:
       "Fluidframe is built with a zero-knowledge architecture. All mockup rendering, shader computations, and media exports happen 100% client-side in your browser.",
@@ -112,7 +109,7 @@ export default function PrivacyPage() {
             <span>Last Updated: August 2026</span>
             <span>•</span>
             <a
-              href="https://github.com/Digvijay-x1/fluidframe/blob/main/LICENSE"
+              href="https://github.com/mkj-1901/Fluidframe/blob/main/LICENSE"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary font-medium hover:underline flex items-center gap-1"
@@ -470,11 +467,11 @@ export default function PrivacyPage() {
               <p>
                 If you have questions, feedback, or privacy-related inquiries
                 regarding Fluidframe, please connect with us through our public
-                repository or developer contact channels:
+                repository:
               </p>
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <a
-                  href="https://github.com/Digvijay-x1/fluidframe/issues"
+                  href="https://github.com/mkj-1901/Fluidframe/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-border/80 bg-muted/40 hover:bg-muted text-xs font-semibold text-foreground transition-all"
@@ -484,18 +481,6 @@ export default function PrivacyPage() {
                     weight="duotone"
                   />
                   <span>GitHub Issues & Discussions</span>
-                </a>
-                <a
-                  href="https://x.com/DIGVIJAY__RAWAT"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-border/80 bg-muted/40 hover:bg-muted text-xs font-semibold text-foreground transition-all"
-                >
-                  <EnvelopeSimpleIcon
-                    className="size-3.5 text-emerald-500"
-                    weight="duotone"
-                  />
-                  <span>Contact the Developer</span>
                 </a>
               </div>
             </div>

@@ -5,10 +5,6 @@ import Link from "next/link";
 import {
   ShieldCheckIcon,
   FileTextIcon,
-  EnvelopeSimpleIcon,
-  UserIcon,
-  GithubLogoIcon,
-  XLogoIcon,
 } from "@phosphor-icons/react";
 import { FooterPattern } from "./patterns";
 
@@ -100,60 +96,30 @@ export const Footer: React.FC = () => {
                   <span>Terms of Service</span>
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="https://x.com/DIGVIJAY__RAWAT"
-                  target="_blank"
-                  className="hover:text-foreground transition-colors flex items-center gap-1.5 group"
-                >
-                  <EnvelopeSimpleIcon
-                    className="size-4 transition-all duration-200 ease-in-out group-hover:scale-105 group-hover:-translate-y-0.5"
-                    weight="duotone"
-                  />
-                  <span>Contact</span>
-                </Link>
-              </li>
             </ul>
           </div>
 
-          {/* Col 4: Connect */}
+          {/* Col 4: Project */}
           <div>
             <h4 className="font-bold text-foreground mb-3 md:mb-4 uppercase text-xs tracking-wider">
-              Connect
+              Project
             </h4>
             <div className="flex flex-col gap-2.5 text-xs sm:text-sm">
               <a
-                href="https://x.com/DIGVIJAY__RAWAT"
+                href="https://github.com/mkj-1901/Fluidframe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <XLogoIcon className="size-4 transition-all duration-200 ease-in-out group-hover:scale-105 group-hover:-translate-y-0.5" />
-                <span>X (Twitter)</span>
+                GitHub Repository
               </a>
               <a
-                href="https://github.com/Digvijay-x1"
+                href="https://github.com/mkj-1901/Fluidframe/issues"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
+                className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                <GithubLogoIcon
-                  className="size-4 transition-all duration-200 ease-in-out group-hover:scale-105 group-hover:-translate-y-0.5"
-                  weight="duotone"
-                />
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://github.com/Digvijay-x1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
-              >
-                <UserIcon
-                  className="size-4 transition-all duration-200 ease-in-out group-hover:scale-105 group-hover:-translate-y-0.5"
-                  weight="duotone"
-                />
-                <span>Dev Portfolio</span>
+                Issues & Feedback
               </a>
             </div>
           </div>
@@ -165,15 +131,7 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} Fluidframe. All rights reserved.
           </span>
           <div className="flex items-center gap-2 text-xs">
-            <span>Crafted with ❤️ for creators worldwide by</span>
-            <a
-              href="https://x.com/DIGVIJAY__RAWAT"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground font-semibold hover:underline"
-            >
-              Digvijay Rawat
-            </a>
+            <span>Crafted with ❤️ for creators worldwide</span>
           </div>
         </div>
       </div>

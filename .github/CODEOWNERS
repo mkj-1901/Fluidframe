@@ -1,11 +1,11 @@
 # Release-sensitive changes request review from the repository owner.
-/.github/ @Digvijay-x1
-/vercel.json @Digvijay-x1
-/next.config.ts @Digvijay-x1
-/package.json @Digvijay-x1
-/package-lock.json @Digvijay-x1
-/.nvmrc @Digvijay-x1
-/.node-version @Digvijay-x1
-/.npmrc @Digvijay-x1
-/prisma/ @Digvijay-x1
-/prisma.config.ts @Digvijay-x1
+/.github/ @mkj-1901
+/vercel.json @mkj-1901
+/next.config.ts @mkj-1901
+/package.json @mkj-1901
+/package-lock.json @mkj-1901
+/.nvmrc @mkj-1901
+/.node-version @mkj-1901
+/.npmrc @mkj-1901
+/prisma/ @mkj-1901
+/prisma.config.ts @mkj-1901

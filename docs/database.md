@@ -34,7 +34,7 @@ docker stop fluidframe-db-check
 
 Production migration execution is intentionally absent while persistence is unused. This workflow receives no production secret, and installation/build hooks contain no migration command. A trusted serialized production migration job, representative previous-schema/data upgrade test, and real backup/restore drill are inapplicable to the current database-free app. They become release prerequisites when #7 establishes the trusted deployment path and a feature actually uses PostgreSQL; setting the environment flag alone is insufficient.
 
-Before that activation, the release owner (@Digvijay-x1) must:
+Before that activation, the release owner (@mkj-1901) must:
 
 1. Identify the production database/provider, direct migration endpoint, previous release schema, and authorized migration owner. Keep preview/test databases and credentials separate. Use a dedicated least-privilege migration role with only the schema DDL/DML permissions needed; the app runtime role must not own migration privileges. Store the migration credential only in the protected production environment, never browser/public variables, PR jobs, artifacts, or logs. Use a direct endpoint for migrations when the provider uses transaction pooling.
 2. Test the exact committed migration chain on a disposable copy of the previous schema with sanitized representative data. Preserve sensitive data boundaries. The historical token migration adds a non-null column without a default and cannot upgrade a populated session table; the earlier account migration drops `expiresAt`. Do not apply this history blindly to an existing auth database. Reconcile its migration ledger and plan explicit backfills/baselines with the owner instead of rewriting applied SQL.
