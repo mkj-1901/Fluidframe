@@ -278,3 +278,12 @@ Fluidframe is an open-source project maintained for creators worldwide.
 <div align="center">
   <sub>Built for creators, designers, and developers around the world.</sub>
 </div>
+
+## 👨‍💻 Team
+
+- IIB2024010 - Mayank Kumar Jha
+- IIT2024252 - Murari Kandagatla
+- IIT2024232 - Prince Raj
+- IIB2024022 - Archee Jaiswal
+- IIT2024241 - Vraj Chalodiya
+- IIT2024271 - Baby Bhavya Harshita
